@@ -15,8 +15,6 @@ function computerPlay() {
 }
 console.log(computerPlay());
 
-
-
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === "rock") {
     if (computerSelection === "rock") {
@@ -52,6 +50,29 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
-console.log(playRound("rock", computerPlay()));
-//playerSelection = prompt ("Pick a hand");
-//playerSelection.toLowerCase();
+
+function game() {
+  let playerScore = 0
+  let computerScore = 0
+  for (let i = 0; i < 5; i++) {
+    let playerSelection = prompt ("Pick a hand");
+    let outcome = playRound(playerSelection, computerPlay());
+    console.log(outcome);
+    if (outcome.includes("You Win!")) {
+      playerScore++;
+    }
+    else if (outcome.includes("You Lose!")) {
+      computerScore++;
+    }
+  }
+  if (playerScore > computerScore) {
+    return `You Win ${playerScore}-${computerScore}`
+  }
+  else if (playerScore < computerScore) {
+    return `You Lose ${playerScore}-${computerScore}`
+  }
+  else if (playerScore === computerScore) {
+    return `It's a draw ${computerScore}-${playerScore}`
+  }
+}
+console.log(game());
