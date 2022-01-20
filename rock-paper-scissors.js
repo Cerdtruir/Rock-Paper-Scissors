@@ -16,6 +16,7 @@ function computerPlay() {
 console.log(computerPlay());
 
 function playRound(playerSelection, computerSelection) {
+  playerSelection = playerSelection.toLowerCase();
   if (playerSelection === "rock") {
     if (computerSelection === "rock") {
       return `It's A Draw! You Both Chose ${playerSelection}`
