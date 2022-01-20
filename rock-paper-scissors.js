@@ -15,7 +15,6 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.toLowerCase();
   if (playerSelection === "rock") {
     if (computerSelection === "rock") {
       return `It's A Draw! You Both Chose ${playerSelection}`
@@ -56,6 +55,12 @@ function game() {
   let computerScore = 0
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt ("Pick a hand");
+    playerSelection = playerSelection.toLowerCase();
+    if (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors"){
+      console.log("Please enter either rock, paper or scissors");
+      i--
+      continue;
+    }
     let outcome = playRound(playerSelection, computerPlay());
     console.log(outcome);
     if (outcome.includes("You Win!")) {
