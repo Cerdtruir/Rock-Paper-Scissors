@@ -13,7 +13,6 @@ function computerPlay() {
 
   }
 }
-console.log(computerPlay());
 
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
