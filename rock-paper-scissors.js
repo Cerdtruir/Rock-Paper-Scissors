@@ -35,6 +35,9 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   let playerScore = 0;
   let computerScore = 0;
+  alert(
+    "This is a game of rock, paper, scissors. You will play a best of 5 against the computer. Type in your selected hand choice and view the result on the console."
+  );
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt("Pick a hand");
     playerSelection = playerSelection.toLowerCase();

@@ -11,7 +11,6 @@
 ## Possible Improvements
 
 - Capitilization of first letter of hands
-- Let the user know what to input in the prompt and let the user know how the game will work, e.g. best out of 5.
 - check if the computer and player selected the same before going through the if statements and return the draw text
 - add funtion for draw, win or lose instead of manually coding each time
 
