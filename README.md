@@ -12,10 +12,12 @@
 
 - Capitilization of first letter of hands
 - Let the user know what to input in the prompt and let the user know how the game will work, e.g. best out of 5.
-- Add a "how to play" section in the readme - usually a `how to use is needed to help readers of your project.
-- optimize random value function
 - check if the computer and player selected the same before going through the if statements and return the draw text
 - add funtion for draw, win or lose instead of manually coding each time
+
+## How to Play
+
+Press F12 and select the console tab, then use the prompts and the output in console to play the game
 
 ## Live Link
 
