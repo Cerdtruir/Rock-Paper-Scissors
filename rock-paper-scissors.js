@@ -1,12 +1,7 @@
 function computerPlay() {
-  let computerHand = Math.floor(Math.random() * 3);
-  if (computerHand === 0) {
-    return "rock";
-  } else if (computerHand === 1) {
-    return "paper";
-  } else if (computerHand === 2) {
-    return "scissors";
-  }
+  const hands = ["rock", "paper", "scissors"];
+  let computerHand = Math.floor(Math.random() * hands.length);
+  return hands[computerHand];
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -40,6 +35,9 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   let playerScore = 0;
   let computerScore = 0;
+  alert(
+    "This is a game of rock, paper, scissors. You will play a best of 5 against the computer. Type in your selected hand choice and view the result on the console."
+  );
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt("Pick a hand");
     playerSelection = playerSelection.toLowerCase();

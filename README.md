@@ -11,6 +11,12 @@
 ## Possible Improvements
 
 - Capitilization of first letter of hands
+- check if the computer and player selected the same before going through the if statements and return the draw text
+- add funtion for draw, win or lose instead of manually coding each time
+
+## How to Play
+
+Press F12 and select the console tab, then use the prompts and the output in console to play the game
 
 ## Live Link
 
